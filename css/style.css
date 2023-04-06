@@ -1,0 +1,142 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+}
+
+main {
+    max-width: 300px;
+    padding: 23px;
+    font-family: 'Outfit', sans-serif;
+    border-radius: 0.9em;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 0px 20px 20px 10px hsl(219, 52%, 11%);
+}
+
+main .image {
+    width: 100%;
+    border-radius: 0.6em;
+}
+
+main .image-container{
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease-in;
+    background-color:hsla(178, 100%, 50%, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.6em;
+}
+
+.image-overlay:hover {
+    opacity: 1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.content h1 {
+    font-size: 21px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 5px;
+}
+
+h1:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.description  {
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.content .stats {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 10px;
+}
+
+.stats .left, .stats .right {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    font-weight: 400;
+}
+
+.stats .right {
+    justify-content: end;
+    
+}
+
+.stats .right p{
+    color: hsl(215, 51%, 70%);
+
+}
+
+.stats .left p{
+    color: hsl(178, 100%, 50%);
+
+}
+
+.stats .left > img, .stats .right > img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.stats .left > p, .stats .right > p {
+    font-weight: 400;
+}
+
+.stats .left > img {
+    width: 10px;
+}
+
+.content .author {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.content .author p {
+    color: hsl(215, 51%, 70%);
+}
+
+.author-name {
+    color: hsl(0, 0%, 100%);
+}
+
+.author-name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.author img {
+    width: 30px;
+    margin-right: 10px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
